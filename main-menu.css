@@ -1,0 +1,15 @@
+.head-navigate {
+    display: flex;
+    height: var(--parent-h);
+    justify-content: space-around;
+    align-items: center;
+}
+
+.desctop-header {
+    --parent-h: 10vh;
+}
+
+.menu-element--container {
+    width: var(--size-xl);
+    height: var(--size-xl);
+}
