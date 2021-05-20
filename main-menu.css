@@ -1,15 +1,42 @@
 .head-navigate {
     display: flex;
-    height: var(--parent-h);
-    justify-content: space-around;
     align-items: center;
 }
-
 .desctop-header {
-    --parent-h: 10vh;
+    background-color: var(--head-bg-color);
+    color:var(--head-color);
+    font-size: 1.4rem;
+    position: relative;
+    width: 100%;
+    box-shadow: 0 5px 5px rgba(0,0,0,.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+    height: 5vh;
 }
-
 .menu-element--container {
-    width: var(--size-xl);
-    height: var(--size-xl);
+    min-width: var(--size-xl);
+    padding: 10px;
+    cursor: pointer;
+}
+.menu-element--container > .label
+{
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+.menu-element--container > .line {
+    height: 2px;
+    width: 0%;
+    margin: auto;
+    background: var(--head-color);
+    transition: .5s;
+}
+.menu-element--container.selected > .label{
+    font-weight: bold;
+}
+.menu-element--container:hover > .line, .menu-element--container.selected > .line{
+    width: 100%
 }

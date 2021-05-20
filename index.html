@@ -1,10 +1,53 @@
 <html>
     <head>
         <link rel="stylesheet" href="main-menu.css">
+        <link rel="stylesheet" href="main-table.css">
+        <link rel="stylesheet" href="fontawesome-free/css/all.min.css">
         <style>
             html
             {
                 --size-xl: 100px;
+                --head-bg-color: rgb(81,165,130);
+                --workspace-bg-color:rgb(197,229,183);
+                --head-color:#fff;
+                --btn-menu-color:rgb(60,155,116);
+                --table-head-bg:rgb(158,206,143);
+
+                --table-border-color:rgb(158 206 143);
+                --table-row-bg:rgb(201,232,197);
+            }
+            body
+            {
+                font-size: 10px;
+                position: relative;
+                margin: 0;
+            }
+            .workspace
+            {
+                background-color: var(--workspace-bg-color);
+                height: 95vh;
+            }
+            .btn-icon 
+            {
+                color: #dfdfdf;
+                transition: .5s;
+                cursor: pointer;
+            }
+            .btn-icon:hover {
+              
+                color:#fff;
+            }
+            .child-space-10 > *
+            {
+                margin-left: 10px;
+            }
+            .child-space-10 > *:first-child
+            {
+                margin-left: 0px;
+            }
+            .center
+            {
+                text-align: center;
             }
         </style>
         <title></title>
@@ -13,17 +56,74 @@
         <header class="desctop-header">
             <main class="head-navigate">
                 <nav class="menu-element--container">
-                    <div class="icon"></div>
                     <div class="label">Контакты</div>
+                    <div class="line"></div>
                 </nav>
-                <nav class="element">Заявки</nav>
-                <nav class="element selected">Настройки</nav>
-                <nav class="element">Админ</nav>
+                <nav class="menu-element--container selected">
+                    <div class="label">Заявки</div>
+                    <div class="line"></div>
+                </nav>
+                <nav class="menu-element--container">
+                    <div class="label">Настройки</div>
+                    <div class="line"></div>
+                </nav>
+                <nav class="menu-element--container">
+                    <div class="label">Администрирование</div>
+                    <div class="line"></div>
+                </nav>
             </main>
+            <div class="btn-icon "><i class="fas fa-th"></i></div>
         </header>
-        <main>
-            <header>Настройки</header>
+        <main class="workspace"> 
+            <section class="main-table--container">
+                <header class="main-table--menu">
+                    <main class="head-navigate child-space-10">
+                        <nav class="menu-element-icon--container">
+                            <i class="icon fas fa-plus-circle"></i>
+                        </nav>
+                        <nav class="menu-element-icon--container">
+                            <i class="icon fas fa-copy"></i>
+                        </nav>
+                        <nav class="menu-element-icon--container">
+                            <i class="icon fas fa-trash-alt"></i>
+                        </nav>
+                </header>
+                <main>
+                    <table class="table" cellspacing="0" width="100%">
+                        <colgroup>
+                            <col>
+                            <col style="background-color: yellow">
+                          </colgroup>
+                        <thead class="table-head">
+                            <tr>
+                                <th></th>
+                                <th>ФИО</th>
+                                <th>Телефон</th>
+                                <th>email</th>
+                                <th>Примечание</th> 
+                            </tr>
+                        </thead>
+                        <tbody class="table-body">
+                            <tr>
+                                <td class="center"><input type="checkbox"> </td>
+                                <td>Иванов Иван</td>
+                                <td>+7(904)1234578</td>
+                                <td>ivanov-ii@email.com</td>
+                                <td>Этот раздел познакомит вас с таблицами HTML, представив самые базовые понятия - строки и ячейки, заголовки, слияние строк и столбцов, а также объединение всех ячеек в столбце в целях стилизации.</td>
+                            </tr>
+                            <tr>
+                                <td class="center"><input type="checkbox"> </td>
+                                <td>Петров Иван</td>
+                                <td>+7(904)1234578</td>
+                                <td>petrov-ii@email.com</td>
+                                <td>Этот раздел познакомит вас с таблицами HTML, представив самые базовые понятия - строки и ячейки, заголовки, слияние строк и столбцов, а также объединение всех ячеек в столбце в целях стилизации.</td>
+                        
+                            </tr>
+                        </tbody>
+                    </table>
+                </main>
 
+            </section>
         </main>
     </body>
 </html>
