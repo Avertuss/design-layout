@@ -89,32 +89,37 @@
                         </nav>
                 </header>
                 <main>
-                    <table class="table" cellspacing="0" width="100%">
+                    <table class="table" cellspacing="0" cols="5" width="100%">
+                        <caption style="text-align:right">My savings</caption>
+                        <col width="50px" >
                         <colgroup>
-                            <col>
-                            <col style="background-color: yellow">
+                            <col span="2" style="background-color:red">
+                            <col style="background-color:yellow">
                           </colgroup>
                         <thead class="table-head">
                             <tr>
-                                <th></th>
+                                <th>&nbsp;</th>
                                 <th>ФИО</th>
                                 <th>Телефон</th>
                                 <th>email</th>
                                 <th>Примечание</th> 
                             </tr>
+                            
                         </thead>
                         <tbody class="table-body">
                             <tr>
                                 <td class="center"><input type="checkbox"> </td>
                                 <td>Иванов Иван</td>
-                                <td>+7(904)1234578</td>
+                                <td>
+                                  <div class="btn-phone"> <i class="icon fas fa-phone-alt" ></i> +7(904)1234578 </div>
+                                </td>
                                 <td>ivanov-ii@email.com</td>
                                 <td>Этот раздел познакомит вас с таблицами HTML, представив самые базовые понятия - строки и ячейки, заголовки, слияние строк и столбцов, а также объединение всех ячеек в столбце в целях стилизации.</td>
                             </tr>
                             <tr>
                                 <td class="center"><input type="checkbox"> </td>
                                 <td>Петров Иван</td>
-                                <td>+7(904)1234578</td>
+                                <td> <div class="btn-phone"> <i class="icon fas fa-phone-alt" ></i> +7(904)1234578 </div></td>
                                 <td>petrov-ii@email.com</td>
                                 <td>Этот раздел познакомит вас с таблицами HTML, представив самые базовые понятия - строки и ячейки, заголовки, слияние строк и столбцов, а также объединение всех ячеек в столбце в целях стилизации.</td>
                         
