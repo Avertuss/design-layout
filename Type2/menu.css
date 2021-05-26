@@ -1,0 +1,92 @@
+.menu
+{
+    --menu-main-color:#19BD50;
+    --menu-second-color:#666;
+}
+.logo {
+    height: 200px;
+}
+
+.label 
+{
+    text-align: center;
+}
+.menu-element
+{
+    width: 80px;
+    height: 80px;
+    position: relative;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+
+    color:var( --menu-second-color);
+    transition: .5s;
+}
+nav.menu-element {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color:var( --menu-second-color);
+    transition: .5s;
+}
+.menu-element > a
+{
+    
+    color:var( --menu-second-color);
+}
+.menu-element.selected > a
+{
+    color: var(--menu-main-color);
+}
+
+.icon {
+    font-size: 50px;
+    text-align: center;
+    padding: 5px;
+}
+.menu-element > a:link {
+    text-decoration: none;
+}
+.menu-element.selected > a {
+    color:var(--menu-main-color);
+}
+.menu-element:hover > a
+{
+    color:var(--menu-main-color);
+    
+}
+.menu-element:hover::before, .menu-element.selected::before
+{
+    background-color: #19BD50;
+}
+.menu-element:before 
+{
+       display: block;
+       width: 5px;
+       height: 80px;
+       background-color: transparent;
+       content: "";
+       position: absolute;
+       border-radius: 0 5px 5px 0;
+       transition:  background-color .5s;
+}
+.circle-icon
+{
+    border-radius: 50%;
+    background-color: #d8ede6;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    justify-content: center;
+    color:var(--menu-main-color);
+}

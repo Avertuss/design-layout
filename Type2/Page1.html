@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="descktop.css">
+        <link rel="stylesheet" href="menu.css">
+        <link rel="stylesheet" href="../fontawesome-free/css/all.min.css">
+        <style>
+            .row-margin-10 > * 
+            {
+                margin-top: 10px;
+            }
+            *[class~="row-margin"] > *:first-child 
+            {
+                margin-top: 0;
+            }
+            .v-center
+            {
+                display: flex;
+                justify-content: center;
+            }
+        </style>
+        <title>
+
+        </title>
+    </head>
+    <body>
+        <main class="descktop">
+            <div class="menu--container">
+                <div class="logo">
+                    
+                </div>
+                <div class="menu row-margin-10">
+                    <nav class="menu-element v-center">
+                        <a class="v-center" href="/settings">
+                            <div class="circle-icon">
+                              <p>РК</p>
+                            </div>
+                        </a>
+                    </nav>
+
+                    <nav class="menu-element selected">
+                        <a href="/home">
+                            <div class="icon">
+                                <span class="fas fa-home"></span>
+                            </div>
+                            <div class="label">Главная</div>
+                        </a>
+                    </nav>
+                    <nav class="menu-element">
+                        <a href="/contact">
+                            <div class="icon"><span class="fas fa-address-card"></span></div>
+                            <div class="label">Контакты</div>
+                        </a>
+                    </nav>
+                    <nav class="menu-element">
+                        <a href="/demand">
+                            <div class="icon"><i class="fab fa-stack-overflow"></i></div>
+                            <div class="label">Заявки</div>
+                        </a>
+                    </nav>
+                </div>
+            </div>
+            <div class="worckspace--container">
+
+            </div>
+        </main>
+    </body>
+</html>

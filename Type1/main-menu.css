@@ -40,3 +40,8 @@
 .menu-element--container:hover > .line, .menu-element--container.selected > .line{
     width: 100%
 }
+
+nav.menu-element-icon--container:hover {
+        color: rgb(57 119 93);
+}
+}
