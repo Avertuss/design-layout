@@ -1,0 +1,25 @@
+.input--text
+{
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    font-size: 18px;
+    outline: none;
+}
+.input--container {
+    width: 100%;
+    display: flex;
+    background-color: #f2f3fa;
+    color: #666666;
+    border-radius: 8px;
+    font-size: 24px;
+    padding: 8px;
+    box-sizing: border-box;   
+    border:1px solid;
+    border-color: transparent;
+}
+.input--container:focus-within
+{
+    background-color: #fff;
+    border-color: #19bd50
+}

@@ -1,0 +1,50 @@
+.task-box {
+    border-radius: 10px;
+    padding: 5px 10px;
+    background-color: #f2f3fa;
+    box-shadow: 0px 3px 3px rgb(0 0 0 / 15%);
+    border: 1px solid #ccc;
+    position: absolute;
+    transition: .5s;
+}
+.task-box--container
+{
+    width: 250px;
+    min-height: 160px;
+    position: relative;
+}
+.task-box:hover 
+{
+    box-shadow: 0px 3px 9px rgb(0 0 0 / 25%);
+}
+.task-box:hover  .comment
+{
+    height: auto;
+    visibility: visible;
+}
+.box-row {
+    display: flex;
+    justify-content: space-between;
+}
+.box-row .label 
+{
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 5px;
+}  
+.task-box h4
+{
+    color: #242473;
+}
+.comment
+{
+    height: 0px;
+    visibility: hidden;
+}
+.article-body {
+    display: flex;
+}
+
+.article-body > * {
+    margin: 10px;
+}

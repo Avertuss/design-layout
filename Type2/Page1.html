@@ -2,6 +2,9 @@
     <head>
         <link rel="stylesheet" href="descktop.css">
         <link rel="stylesheet" href="menu.css">
+        <link rel="stylesheet" href="input.css">
+        <link rel="stylesheet" href="page.css">
+        <link rel="stylesheet" href="task-box.css">
         <link rel="stylesheet" href="../fontawesome-free/css/all.min.css">
         <style>
             .row-margin-10 > * 
@@ -57,10 +60,69 @@
                             <div class="label">Заявки</div>
                         </a>
                     </nav>
+                    <nav class="menu-element">
+                        <a href="/demand">
+                            <div class="icon"><i class="fas fa-tasks"></i></div>
+                            <div class="label">Задачи</div>
+                        </a>
+                    </nav>
+                    <nav class="menu-element">
+                        <a href="/demand">
+                            <div class="icon"><i class="fas fa-cog"></i></div>
+                            <div class="label">Настройки</div>
+                        </a>
+                    </nav>
+                    
                 </div>
             </div>
             <div class="worckspace--container">
-
+                <main class="page home--page">
+                    <header class="page--header">
+                      <div class="input--container">  <input placeholder="Контакты, задачи, заявки" class="input--text" type="text"/> <i class="fas fa-search"></i> </div>
+                    </header>
+                    <main class="page--body">
+                        <section >
+                            <h2 class="">Задачи</h2>
+                            <div class="article-body">
+                                    <article class="task-box--container">
+                                        <div class="task-box">
+                                            <h4>  <i class="fas fa-headset"></i><span> Перезвонить </span></h4>
+                                            <div class="box-row"><span class="label">Дата исполнения</span> <span>21.06.2021</span></div>
+                                            <div class="box-row">
+                                                <span class="label">Телефон</span> 
+                                                <a href class="field-phone"><span> +7(906)185 09 23 </span> </a>
+                                            </div>
+                                            <div class="box-row">
+                                                <span class="label">Клиент</span> 
+                                                <a href class="field-client"><span> Иванов Иван</span></a>
+                                            </div>
+                                            <div class="box-row"><span class="label">Комментарий:</span></div>
+                                            <div class="comment">Перезвонить клиенту обговорить то-се </div>
+                                        </div>
+                                    </article>
+                                    <article class="task-box--container">
+                                        <div class="task-box">
+                                            <h4>  <i class="fas fa-headset"></i><span> Перезвонить </span></h4>
+                                            <div class="box-row"><span class="label">Дата исполнения</span> <span>21.06.2021</span></div>
+                                            <div class="box-row">
+                                                <span class="label">Телефон</span> 
+                                                <a href class="field-phone"><span> +7(906)123 45 67 </span> </a>
+                                            </div>
+                                            <div class="box-row">
+                                                <span class="label">Клиент</span> 
+                                                <a href class="field-client"><span> Петров Петр</span></a>
+                                            </div>
+                                            <div class="box-row"><span class="label">Комментарий:</span></div>
+                                            <div class="comment">Перезвонить клиенту обговорить то-се </div>
+                                        </div>
+                                    </article>
+                            </div>
+                        </section>
+                        <section>
+                            <h2>Избраное</h2>
+                        </section>
+                    </main>
+                </main>
             </div>
         </main>
     </body>
