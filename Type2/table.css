@@ -1,0 +1,48 @@
+
+td {
+    padding: 8px;
+}
+
+th {
+    padding: 8px;
+    text-align: left;
+}
+
+thead 
+{
+    background-color: #f2f3fa;
+    position: relative;
+}
+
+table {
+    border-collapse: collapse;
+}
+tbody
+{
+    position: relative;
+    z-index: 1;
+}
+tr 
+{
+    border-bottom: 1px solid #d6d6d6;
+  
+}
+
+tbody tr:hover td
+{
+    background-color:#f2f3fa; 
+}
+td, th {
+    padding: 10px;
+    position: relative;
+    transition: .5s;
+}
+.col-phone
+{
+    width: 140px;
+}
+.col-name
+{
+    width: 120px;
+}
+

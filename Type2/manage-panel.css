@@ -1,0 +1,21 @@
+.manage-panel {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.left-panel {
+    display: flex;
+    align-items: center;
+
+}
+.right-panel {
+    display: flex;
+    align-items: center;
+}
+
+.container-box {
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 4px;
+}

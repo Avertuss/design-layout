@@ -1,0 +1,50 @@
+.sub-menu--element {
+    height: 50px;
+
+    z-index: 10;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: black;
+    font-size: 16px;
+    transition: background-color .5s;
+}
+.sub-menu--element.selected
+{
+    background-color: #fff;
+}
+.sub-menu-container {
+    border-left: 1px solid #c4c5ca;
+}
+.sub-menu--element:hover::before, .sub-menu--element.selected::before
+{
+    background-color: #19BD50;
+}
+.sub-menu--element::before {
+    display: block;
+    width: 5px;
+    height: 100%;
+    background-color: transparent;
+    content: "";
+    position: absolute;
+    border-radius: 0 5px 5px 0;
+    transition: background-color .5s;
+    z-index: 11;
+}
+.sub-menu--element:hover
+{
+    background-color: #fff;
+}
+.sub-menu--element .label 
+{
+    text-align: center;
+    margin-left: 20px;
+}
+.sub-menu > a:link {
+    text-decoration: none;
+}
+.sub-menu-container .logo {
+    height: 200px;
+    box-sizing: border-box;
+    padding: 0 20px;
+}

@@ -1,0 +1,48 @@
+.btn-mini .icon 
+{
+    font-size: 24px;
+    width: 24px;
+    height: 24px;
+}
+.btn-mini
+{
+    margin: 5px;
+    background-color: #ededed;
+    color: #19bd50;
+    border: none;
+    padding: 10px;
+    transition: background .3s;
+    position:relative;
+}
+.btn-mini:not(.btn-mini:disabled):hover
+{
+    background-color: #e0e0e0;
+}
+.btn-mini:disabled {
+    color: #a4a4a4;
+}
+ .tooltip
+{
+    position: relative;
+}
+.tooltip .tooltip-bottom--message
+{
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    background: #19bd50;
+    box-shadow: 0px 5px 5px rgb(0 0 0 / 40%);
+    left:0;
+    z-index: 30;
+    font-size: 16px;
+    border-radius: 5px;
+    color: #f2f3fa;
+    padding: 10px;
+    transition: .3s;
+    margin-top: 100%;
+}
+.tooltip:hover .tooltip-bottom--message
+{
+    opacity: 1;
+    visibility: visible;
+ }

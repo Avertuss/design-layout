@@ -1,0 +1,205 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="descktop.css">
+        <link rel="stylesheet" href="menu.css">
+        <link rel="stylesheet" href="input.css">
+        <link rel="stylesheet" href="page.css">
+        <link rel="stylesheet" href="task-box.css">
+        <link rel="stylesheet" href="sub-menu.css">
+        <link rel="stylesheet" href="table.css">
+        <link rel="stylesheet" href="../fontawesome-free/css/all.min.css">
+        <link rel="stylesheet" href="manage-panel.css">
+        <link rel="stylesheet" href="button.css">
+        <link rel="stylesheet" href="toggle.css">   
+        <style>
+            .row-margin-10 > * 
+            {
+                margin-top: 10px;
+            }
+            *[class~="row-margin"] > *:first-child 
+            {
+                margin-top: 0;
+            }
+            .v-center
+            {
+                display: flex;
+                justify-content: center;
+            }
+        </style>
+        <title>
+            
+        </title>
+    </head>
+    <body>
+        <main class="descktop">
+            <div class="menu--container">
+                <div class="logo">
+                    
+                </div>
+                <div class="menu row-margin-10">
+                    <nav class="menu-element v-center">
+                        <a class="v-center" href="/settings">
+                            <div class="circle-icon">
+                              <p>РК</p>
+                            </div>
+                        </a>
+                    </nav>
+
+                    <nav class="menu-element">
+                        <a href="home.html">
+                            <div class="icon">
+                                <span class="fas fa-home"></span>
+                            </div>
+                            <div class="label">Главная</div>
+                        </a>
+                    </nav>
+                    <nav class="menu-element selected">
+                        <a href="/contact">
+                            <div class="icon"><span class="fas fa-address-card"></span></div>
+                            <div class="label">Контакты</div>
+                        </a>
+                    </nav>
+                    <nav class="menu-element">
+                        <a href="/demand">
+                            <div class="icon"><i class="fab fa-stack-overflow"></i></div>
+                            <div class="label">Заявки</div>
+                        </a>
+                    </nav>
+                    <nav class="menu-element">
+                        <a href="/demand">
+                            <div class="icon"><i class="fas fa-tasks"></i></div>
+                            <div class="label">Задачи</div>
+                        </a>
+                    </nav>
+                    <nav class="menu-element">
+                        <a href="/demand">
+                            <div class="icon"><i class="fas fa-cog"></i></div>
+                            <div class="label">Настройки</div>
+                        </a>
+                    </nav>
+                    
+                </div>
+            </div>
+            <div class="sub-menu-container">
+                <div class="logo">
+                  <h2>Контакты</h2>  
+                </div>
+                <div class="sub-menu row-margin-10">
+                        <a  href>
+                            <div class="sub-menu--element selected">
+                                <span class="label">Все</span>
+                            </div>
+                        </a>
+                        <a  href>
+                            <div class="sub-menu--element">
+                                <span class="label">Новые</span>
+                            </div>
+                        </a>
+                        <a  href>
+                            <div class="sub-menu--element">
+                                <span class="label">Депозит</span>
+                            </div>
+                        </a>
+                        <a  href>
+                            <div class="sub-menu--element">
+                                <span class="label">Купил</span>
+                            </div>
+                        </a>
+                </div>
+            </div>
+            <div class="worckspace--container pages-double">
+                <main class="page contact--page">
+                    <header class="page--header">
+                        <div class="input--container">  <input placeholder="Контакты" class="input--text" type="text"/> <i class="fas fa-search"></i> </div>
+                    </header>
+                    <main class="page--body">
+                        <div class="manage-panel">
+                           <div class="left-panel">
+                            <div class="tooltip">
+                              <button class="btn-mini" >
+                                <i class="icon far fa-plus-square"></i>
+                            </button>
+                            <span class="tooltip-bottom--message">Добавить</span>
+                            </div>
+                            <div class="tooltip">
+                              <button class="btn-mini" disabled>  
+                                  <i class="icon far fa-copy"></i>
+                                </button>
+                                <span class="tooltip-bottom--message">Копировать</span>
+                            </div>
+                            <div class="tooltip">
+                                <button class="btn-mini" disabled><i class="icon far fa-trash-alt"></i></button>
+                                <span class="tooltip-bottom--message">Удалить</span>
+                            </div>
+                            </div> 
+                            <div class="right-panel">
+                                <div class="toggle">
+                                    <input type="checkbox" hidden checked>
+                                    <div class="toggle-left">
+                                        <i class="icon fas fa-th"></i>
+                                    </div>
+                                    <div class="toggle-right">
+                                        <i class="icon fas fa-th-list"></i>
+                                    </div>
+                                </div>
+                                <div class="tooltip">
+                                    <button class="btn-mini"><i class="icon fas fa-columns"></i></button>
+                                    <span class="tooltip-bottom--message">Колонки</span>
+                                </div> 
+                            </div>
+                        </div>
+                        <table cellspacing="0">
+                                <colgroup>
+                                    <col class="col-checkbox">
+                                    <col class="col-name">
+                                    <col class="col-phone">
+                                </colgroup>
+                            <thead>
+                                <tr>
+                                    <th><input type="checkbox"></th>
+                                    <th>ФИО</th>
+                                    <th>Телефон</th>
+                                    <th>email</th>
+                                    <th>Примечание</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>Иванов Иван</td>
+                                    <td>
+                                        <a href class="field-phone"><span> +7(906)185 09 23 </span> </a>
+                                    </td>
+                                    <td>email@mail.ru</td>
+                                    <td>Font Awesome 6's beta release is out now!
+                                        Subscribe to Font Awesome Pro and get instant access to the v6 beta.</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>Василий</td>
+                                    <td>
+                                        <a href class="field-phone"><span> +7(906)185 09 23 </span> </a>
+                                    </td>
+                                    <td>email@mail.ru</td>
+                                    <td>Font Awesome 6's beta release is out now!
+                                        Subscribe to Font Awesome Pro and get instant access to the v6 beta.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </main>
+                </main>
+                <main class="page contact-sub--page">
+                    <header class="page--header"></header>
+                    <main class="page--body">
+                    <section class="container-box">
+                        <header class="container-box--header"><i class="icon far fa-angle-up"></i> <span>Заявки</span></header>
+                        <main class="container-box--body">
+                                
+                        </main>
+                    </section>
+                    <main>
+                </main>
+            </div>
+        </main>
+    </body>
+</html>

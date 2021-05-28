@@ -1,0 +1,32 @@
+
+.toggle {
+    display: flex;
+    font-size: 24px;
+    background-color: #ededed;
+    margin: 5px;
+}
+
+.toggle-left {
+    color: #19bd50;
+    transition: background .3s;
+    padding: 10px;
+
+}
+
+.toggle-right {
+    color: #19bd50;
+    transition: background .3s;
+    padding: 10px;
+}
+.toggle input[type="checkbox"]:not(.toggle input[type="checkbox"]:checked) ~ .toggle-left
+{
+    background-color: #e0e0e0;
+}
+.toggle input[type="checkbox"]:checked ~ .toggle-right
+{
+    background-color: #e0e0e0;
+}
+.toggle  .toggle-right:hover, .toggle  .toggle-left:hover
+{
+    background-color: #e0e0e0;
+}
