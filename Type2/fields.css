@@ -1,0 +1,10 @@
+.field-cell
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+.field-cell .label{
+    font-size: 13px;
+    color: #666;
+}

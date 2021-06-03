@@ -1,0 +1,20 @@
+.row-ma-10 > * 
+{
+    margin-top: 10px;
+}
+*[class~="row-ma-"] > *:first-child 
+{
+    margin-top: 0;
+}
+.col-ma-10 > *
+{
+    margin-left: 10px;
+}
+*[class~="col-ma-"] > *:first-child 
+{
+    margin-left: 0;
+}
+.ta-r
+{
+    text-align: right; 
+}

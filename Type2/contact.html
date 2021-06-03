@@ -10,16 +10,12 @@
         <link rel="stylesheet" href="../fontawesome-free/css/all.min.css">
         <link rel="stylesheet" href="manage-panel.css">
         <link rel="stylesheet" href="button.css">
-        <link rel="stylesheet" href="toggle.css">   
+        <link rel="stylesheet" href="toggle.css">
+        <link rel="stylesheet" href="common.css">   
+        <link rel="stylesheet" href="grid.css">
+        <link rel="stylesheet" href="fields.css">      
         <style>
-            .row-margin-10 > * 
-            {
-                margin-top: 10px;
-            }
-            *[class~="row-margin"] > *:first-child 
-            {
-                margin-top: 0;
-            }
+            
             .v-center
             {
                 display: flex;
@@ -116,6 +112,12 @@
                         <div class="manage-panel">
                            <div class="left-panel">
                             <div class="tooltip">
+                                <button class="btn-mini" >
+                                  <i class="icon fas fa-filter"></i>
+                              </button>
+                              <span class="tooltip-bottom--message">Фильтры</span>
+                              </div>
+                            <div class="tooltip">
                               <button class="btn-mini" >
                                 <i class="icon far fa-plus-square"></i>
                             </button>
@@ -134,7 +136,7 @@
                             </div> 
                             <div class="right-panel">
                                 <div class="toggle">
-                                    <input type="checkbox" hidden checked>
+                                    <input type="checkbox" hidden >
                                     <div class="toggle-left">
                                         <i class="icon fas fa-th"></i>
                                     </div>
@@ -188,13 +190,42 @@
                         </table>
                     </main>
                 </main>
+                <div class="page-line"></div>
                 <main class="page contact-sub--page">
                     <header class="page--header"></header>
                     <main class="page--body">
-                    <section class="container-box">
-                        <header class="container-box--header"><i class="icon far fa-angle-up"></i> <span>Заявки</span></header>
-                        <main class="container-box--body">
-                                
+          
+                    <section class="container-box--open">
+                        <header class="container-box-header">
+                            <i class="fab fa-stack-overflow">  Заявки</i> 
+         
+                            <i class="fas fa-chevron-down"></i>
+                        </header>
+                        <main class="container-box-body row-ma-10">
+                            <div class="demand-mini-card">
+                                <div class="box-row"><span class="label">№</span><a href ><span>104511</span></a></div>
+                                <div class="box-row"><span class="label">Дата создания</span> <span>21.06.2021 13:45  </span> </div>
+                                <div class="box-row"><span class="label">Имя</span> <span>Василий</span></div>
+                                <div class="box-row"><span class="label">Комментарий:</span> </div>
+                                <div class="box-row">Font Awesome 6's beta release is out now! Subscribe to Font Awesome Pro and get instant access to the v6 beta. </div>
+                            </div>
+                            <div class="demand-mini-card">
+                                <div class="box-row"><span class="label">Дата создания</span><span>21.06.2021 18:45</span></div>
+                                <div class="box-row"><span class="label">Имя</span> <span>Василий</span></div>
+                                <div class="box-row"><span class="label">Комментарий:</span> </div>
+                                <div class="box-row">Font Awesome 6's beta release is out now!  </div>
+                            </div>
+                            <div class="demand-mini-card card-grid">
+                                <span >Заявка №</span><a href class="ta-r"  ><span >104512</span></a>
+                                <div class="field-cell">
+                                    <span class="label">Дата создания</span>
+                                    <span>21.06.2021 18:45</span>
+                                </div>
+                                <div class="field-cell">
+                                    <span class="label">Имя</span> <span>Василий</span>
+                                </div>
+                                <div class="field-cell grid-row-span"><span class="label">Комментарий:</span><span>Font Awesome 6's beta release is out now! </span> </div>
+                            </div>
                         </main>
                     </section>
                     <main>

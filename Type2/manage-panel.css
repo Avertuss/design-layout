@@ -14,8 +14,33 @@
     align-items: center;
 }
 
-.container-box {
+*[class^="container-box--"] {
     padding: 10px;
-    border: 1px solid;
+    background-color: #f2f3fa;
+    box-shadow: 0px 3px 3px rgb(0 0 0 / 15%);
+    border: 1px solid #ccc;
     border-radius: 4px;
+}
+.container-box--close  .container-box--body
+{
+       height: 0;
+       visibility: hidden;
+       opacity: 0;
+}
+.container-box-header
+{
+    color: darkblue;
+    display:flex;
+    justify-content: space-between;
+}
+.demand-mini-card {
+    padding: 5px;
+    border-radius: 5px;
+    /* border: 1px solid #ededed; */
+    box-shadow: 0px 0 3px rgb(0 0 0 / 40%);
+    background-color: #ededed;
+}
+.container-box-body {
+    margin-top: 10px;
+    transition: .5s  ;
 }
