@@ -8,3 +8,32 @@
     font-size: 13px;
     color: #666;
 }
+.field-card
+{
+    position: relative;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding: 8px;
+    padding-bottom: 4px;
+}
+.field-card > label
+{
+    position: absolute;
+    top: -10px;
+    padding: 0 5px;
+    background: #fff;
+}
+.field-card > input {
+    outline: none;
+    border: none;
+    width: 100%;
+    font-size: 16px;
+}
+.type-select
+{
+    display: flex;
+}
+.field-card.type-select > input{
+    text-decoration: underline;
+    color: #551a8b;
+}

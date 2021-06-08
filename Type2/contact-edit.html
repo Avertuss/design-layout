@@ -13,7 +13,8 @@
         <link rel="stylesheet" href="toggle.css">
         <link rel="stylesheet" href="common.css">   
         <link rel="stylesheet" href="grid.css">
-        <link rel="stylesheet" href="fields.css">      
+        <link rel="stylesheet" href="fields.css">   
+        <link rel="stylesheet" href="modal.css">   
         <style>
             
             .v-center
@@ -170,7 +171,7 @@
                             <tbody>
                                 <tr>
                                     <td><input type="checkbox"></td>
-                                    <td><a href="contact-edit.html"><i class="fas fa-edit"></i></a></td>
+                                    <td><a href><i class="fas fa-edit"></i></a></td>
                                     <td>Иванов Иван</td>
                                     <td>
                                         <a href class="field-phone"><span> +7(906)185 09 23 </span> </a>
@@ -236,5 +237,41 @@
                 </main>
             </div>
         </main>
+        <div class="modal-window-container">
+            <div class="modal-window">
+                <header> Карточка контакта. Иванов Иван </header>
+                <main class="edit-card card-contact row-ma--10">
+                    <div class="row col-ma--10">
+                        <div class="field-card type-select"><label>Ответсвенный</label><input type="text" value="Федеров Федор"><i class="fas fa-times"></i><i class="fas fa-unlink"></i> </div>
+                        <div class="field-card"><label>Тип</label><input type="text" value="Новый"></div>
+                        <div class="field-card"><label>Категория</label><input type="text" value="Новый"></div>
+                        <div class="field-card"><label>Статус</label><input type="text" value="Новый"></div>
+                    </div>
+                    <div class="row col-ma--10">
+                        <div class="field-card"><label>Тип</label><input type="text" value="Клиент"></div>
+                        <div class="field-card"><label>Статус</label><input type="text" value="Новый"></div>
+                    </div>
+                    <div class="row col-ma--10">
+                        <div class="field-card"><label>Фамилия</label><input type="text" value="Иванов"></div>
+                        <div class="field-card"><label>Имя</label><input type="text" value="Иван"></div>
+                    </div>
+                    <div class="row col-ma--10">
+                        <div class="field-card"><label>Телефон</label><input type="text" value="Иванов"></div>
+                        <div class="field-card"><label>email</label><input type="text" value="Иван"></div>
+                    </div>
+
+                </main>
+                <footer>
+                    <button class="btn-mini" disabled>
+                        <i class="fas fa-check"></i>
+                        <span>Сохранить</span>
+                    </button>
+                    <button class="btn-mini" >
+                        <i class="fas fa-times"></i>
+                        <span>Отмена</span>
+                    </button>
+                </footer>
+            </div>
+        </div>
     </body>
 </html>

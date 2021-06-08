@@ -7,7 +7,7 @@
 .btn-mini
 {
     margin: 5px;
-    background-color: #ededed;
+    background-color:var(--button-bg) #8a8888;
     color: #19bd50;
     border: none;
     padding: 10px;

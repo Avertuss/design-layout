@@ -4,6 +4,7 @@
     height: 100%;   
     --menu-width:80px;
     --sub-menu-width: 220px;
+    --button-bg: #8a8888;
 }
 .menu--container 
 {

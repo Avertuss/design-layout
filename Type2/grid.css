@@ -6,3 +6,11 @@
 {
     grid-column: 1 / span 2;
 }
+.row
+{
+    display: flex;
+}
+.row > *
+{
+    flex:1;
+}
