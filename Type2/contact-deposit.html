@@ -13,8 +13,7 @@
         <link rel="stylesheet" href="toggle.css">
         <link rel="stylesheet" href="common.css">   
         <link rel="stylesheet" href="grid.css">
-        <link rel="stylesheet" href="fields.css">   
-        <link rel="stylesheet" href="modal.css">
+        <link rel="stylesheet" href="fields.css">      
         <link rel="stylesheet" href="chat.css">   
         <style>
             
@@ -52,7 +51,7 @@
                         </a>
                     </nav>
                     <nav class="menu-element selected">
-                        <a href="/contact-all.html">
+                        <a href="/contact">
                             <div class="icon"><span class="fas fa-address-card"></span></div>
                             <div class="label">Контакты</div>
                         </a>
@@ -83,8 +82,8 @@
                   <h2>Контакты</h2>  
                 </div>
                 <div class="sub-menu row-margin-10">
-                        <a  href>
-                            <div class="sub-menu--element selected">
+                        <a  href="contact-all.html">
+                            <div class="sub-menu--element ">
                                 <span class="label">Все</span>
                             </div>
                         </a>
@@ -94,7 +93,7 @@
                             </div>
                         </a>
                         <a  href>
-                            <div class="sub-menu--element">
+                            <div class="sub-menu--element selected">
                                 <span class="label">Депозит</span>
                             </div>
                         </a>
@@ -173,17 +172,6 @@
                                 <tr>
                                     <td><input type="checkbox"></td>
                                     <td><a href><i class="fas fa-edit"></i></a></td>
-                                    <td>Иванов Иван</td>
-                                    <td>
-                                        <a href class="field-phone"><span> +7(906)185 09 23 </span> </a>
-                                    </td>
-                                    <td>email@mail.ru</td>
-                                    <td>Font Awesome 6's beta release is out now!
-                                        Subscribe to Font Awesome Pro and get instant access to the v6 beta.</td>
-                                </tr>
-                                <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td><a href><i class="fas fa-edit"></i></a></td>
                                     <td>Василий</td>
                                     <td>
                                         <a href class="field-phone"><span> +7(906)185 09 23 </span> </a>
@@ -203,34 +191,18 @@
           
                     <section class="container-box--open">
                         <header class="container-box-header">
-                            <i class="fab fa-stack-overflow">  Заявки</i> 
+                            <i class="far fa-comments">  Чат</i> 
          
                             <i class="fas fa-chevron-down"></i>
                         </header>
-                        <main class="container-box-body row-ma-10">
-                            <div class="demand-mini-card">
-                                <div class="box-row"><span class="label">№</span><a href ><span>104511</span></a></div>
-                                <div class="box-row"><span class="label">Дата создания</span> <span>21.06.2021 13:45  </span> </div>
-                                <div class="box-row"><span class="label">Имя</span> <span>Василий</span></div>
-                                <div class="box-row"><span class="label">Комментарий:</span> </div>
-                                <div class="box-row">Font Awesome 6's beta release is out now! Subscribe to Font Awesome Pro and get instant access to the v6 beta. </div>
+                        <main class="container-box-body row-ma--10">
+                            <div class="chat-message-left">
+                                <div class="message-head"><i class="fab fa-telegram-plane"></i><span class="time">10:11</span></div>
+                                <div class="message-text">Привет!</div>
                             </div>
-                            <div class="demand-mini-card">
-                                <div class="box-row"><span class="label">Дата создания</span><span>21.06.2021 18:45</span></div>
-                                <div class="box-row"><span class="label">Имя</span> <span>Василий</span></div>
-                                <div class="box-row"><span class="label">Комментарий:</span> </div>
-                                <div class="box-row">Font Awesome 6's beta release is out now!  </div>
-                            </div>
-                            <div class="demand-mini-card card-grid">
-                                <span >Заявка №</span><a href class="ta-r"  ><span >104512</span></a>
-                                <div class="field-cell">
-                                    <span class="label">Дата создания</span>
-                                    <span>21.06.2021 18:45</span>
-                                </div>
-                                <div class="field-cell">
-                                    <span class="label">Имя</span> <span>Василий</span>
-                                </div>
-                                <div class="field-cell grid-row-span"><span class="label">Комментарий:</span><span>Font Awesome 6's beta release is out now! </span> </div>
+                            <div class="chat-message-right">
+                                <div class="message-head"><i class="fab fa-telegram-plane"></i><span class="time">10:11</span></div>
+                                <div class="message-text">Привет!</div>
                             </div>
                         </main>
                     </section>
@@ -238,51 +210,5 @@
                 </main>
             </div>
         </main>
-        <div class="modal-window-container">
-            <div class="modal-window">
-                <header> Карточка контакта. Иванов Иван </header>
-                <main class="edit-card card-contact row-ma--10">
-                    <div class="row col-ma--10">
-                        <div class="field-card type-select" data-title="Ответсвенный">
-                            <input type="text" value="Федеров Федор">
-                            <div class="fl ai-c col-ma--5 control-block"><i class="fas fa-times"></i><i class="fas fa-unlink"></i><i class="fas fa-angle-down"></i></div>
-                        </div>
-                        <div class="field-card type-select" data-title="Тип">
-                            <input type="text" value="Новый">
-                            <div class="fl ai-c col-ma--5 control-block"><i class="fas fa-times"></i><i class="fas fa-unlink"></i><i class="fas fa-angle-down"></i></div>
-                        </div>
-                        <div class="field-card type-select" data-title="Статус" >
-                            <input type="text" value="">
-                            <div class="fl ai-c col-ma--5 control-block"><i class="fas fa-angle-down"></i></div>
-                        </div>
-                    </div>
-                    <div class="row col-ma--10">
-                        <div class="field-card" data-title="Фамилия"><input type="text" value="Иванов"></div>
-                        <div class="field-card" data-title="Имя"><input type="text" value="Иван"></div>
-                    </div>
-                    <div class="row col-ma--10">
-                        
-                        
-                    </div>
-                    <div class="row col-ma--10">
-                        <div class="field-card"><label>Телефон</label><input type="text" value="Иванов"></div>
-                        <div class="field-card"><label>email</label><input type="text" value="Иван"></div>
-                    </div>
-
-                </main>
-                <footer>
-                    <button class="btn-mini" disabled>
-                        <i class="fas fa-check"></i>
-                        <span>Сохранить</span>
-                    </button>
-                    <a href="contact-all.html">
-                    <button class="btn-mini" >
-                        <i class="fas fa-times"></i>
-                        <span>Отмена</span>
-                    </button>
-                </a>
-                </footer>
-            </div>
-        </div>
     </body>
 </html>

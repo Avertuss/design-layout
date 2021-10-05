@@ -10,6 +10,10 @@
 {
     margin-left: 10px;
 }
+.col-ma--5 > *
+{
+    margin-left: 5px;
+}
 *[class*="col-ma--"] > *:first-child 
 {
     margin-left: 0;
@@ -17,4 +21,16 @@
 .ta-r
 {
     text-align: right; 
+}
+.fl
+{
+    display: flex;   
+}
+.ai-c
+{
+    align-items: center;
+}
+.jc-sb
+{
+    justify-content: space-between;
 }

@@ -1,0 +1,24 @@
+.chat-message-left 
+{
+    border-radius: 0 5px 5px 5px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 0 2px;
+}
+.chat-message-right
+{
+    border-radius: 5px 0 5px 5px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 0 2px;
+}
+.message-head
+{
+    display: flex;
+    justify-content: space-between;
+}
+.time 
+{
+    text-align: right;
+    font-size: 12px;
+}

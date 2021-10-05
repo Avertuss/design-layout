@@ -1,4 +1,4 @@
-.task-box {
+.task-container *[class^="task-box"] {
     border-radius: 10px;
     padding: 5px 10px;
     background-color: #f2f3fa;
@@ -7,13 +7,20 @@
     position: absolute;
     transition: .5s;
 }
-.task-box--container
+.task-container  .task-box--fill
+{
+    width: 100%;
+    box-sizing: border-box;
+    height: 100%;
+    background-color: #fcfcfc;
+}
+.task-container
 {
     width: 250px;
     min-height: 160px;
     position: relative;
 }
-.task-box:hover 
+.task-container *[class^="task-box"]:hover 
 {
     box-shadow: 0px 3px 9px rgb(0 0 0 / 25%);
 }
@@ -26,13 +33,18 @@
     display: flex;
     justify-content: space-between;
 }
+.box-row--center
+{
+    display: flex;
+    justify-content: center;
+}
 .box-row .label 
 {
     font-size: 13px;
     color: #666;
     margin-bottom: 5px;
 }  
-.task-box h4
+.task-container h4
 {
     color: #242473;
 }
